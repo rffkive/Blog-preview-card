@@ -19,7 +19,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![screeenshot](/design/webpage.png)
+![screeenshot](/design/active-states.png)
 
 
 ### Links
