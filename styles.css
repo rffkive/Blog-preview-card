@@ -1,44 +1,68 @@
-
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f9d949;
-    font-family: Arial, sans-serif;
-  }
-  main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f9d949; 
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
 
-  .card {
-    max-width: 320px;
-    padding: 24px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.8); /* Distinctive drop shadow */
-    border: 1px solid #000;
-  }
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 320px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.8); 
+  border: 1px solid #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.7);
+}
+
+.card:focus-within {
+  outline: 3px solid #000;
+  transform: translateY(-5px);
+}
 
 .card img.thumbnail {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
+  transition: filter 0.3s ease;
+}
+
+.card:hover img.thumbnail {
+  filter: brightness(1.05);
 }
 
 .tag {
   display: inline-block;
   padding: 6px 12px;
-  background-color: #f9d949; /* Yellow tag background */
+  background-color: #f9d949; 
   border-radius: 4px;
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #f0ca30;
+  transform: scale(1.05);
 }
 
 .date {
@@ -51,6 +75,12 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.card:hover .title {
+  color: #333;
+  text-decoration: underline;
 }
 
 .description {
@@ -60,33 +90,53 @@ body {
   font-size: 14px;
 }
 
-.owner {
+.author {
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease;
 }
 
-.owner img {
+.card:hover .author {
+  transform: scale(1.02);
+}
+
+.author img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
+  transition: transform 0.3s ease;
 }
 
-.owner div {
+.card:hover .author img {
+  transform: rotate(5deg);
+}
+
+.author div {
   font-weight: bold;
   font-size: 14px;
 }
-  footer {
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
+
+footer {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 12px;
+  color: #555;
+}
+
+.attribution a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.attribution a:hover, .attribution a:focus {
+    color: #000;
+    text-decoration: underline;
   }
   
-  .attribution {
-    font-size: 12px;
-    color: #555;
-  }
   
-  .attribution a {
-    color: #333;
-  }
