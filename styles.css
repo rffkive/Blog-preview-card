@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+
   .card {
     max-width: 320px;
     padding: 24px;
@@ -25,6 +25,57 @@ body {
     border: 1px solid #000;
   }
 
+.card img.thumbnail {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #f9d949; /* Yellow tag background */
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+}
+
+.owner img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.owner div {
+  font-weight: bold;
+  font-size: 14px;
+}
   footer {
     width: 100%;
     padding: 10px 0;
