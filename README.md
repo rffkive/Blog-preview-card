@@ -19,13 +19,11 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![screeenshot](/design/active-states.png)
+![screeenshot](/design/live_webpage.png)
 
 
 ### Links
-
-- Solution URL: 
-- Live Site URL: 
+- Live Site URL: [link](https://rffkive.github.io/Blog-preview-card/)
 
 ## My process
 
